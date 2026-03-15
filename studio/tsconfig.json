@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "module": "commonjs",
+        "lib": [
+            "DOM",
+            "ES2019"
+        ],
+        "jsx": "react-jsx",
+        "strict": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "*"
+            ]
+        },
+        "esModuleInterop": true
+    }
+}

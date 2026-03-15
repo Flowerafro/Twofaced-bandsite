@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #E63946;
+  /* Example premium red */
+  --color-brand-black: #0F0F0F;
+  /* Soft black */
+  --color-brand-white: #F1FAEE;
+  /* Off white */
+  --color-brand-dark-gray: #1A1A1A;
+  --color-brand-light-gray: #A8A8A8;
+}
+
+body {
+  @apply bg-brand-black text-brand-white antialiased overflow-x-hidden;
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  width: 100vw;
+}
+
+#root {
+  @apply w-full overflow-x-hidden;
+}
