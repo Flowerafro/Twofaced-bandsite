@@ -33,7 +33,7 @@ function App() {
         {renderContent()}
       </main>
 
-     <footer className="py-12 text-center text-brand-white text-xs uppercase tracking-widest flex flex-col gap-3">
+     <footer className="py-12 text-center text-brand-black text-xs uppercase tracking-widest flex flex-col gap-3">
 
       <h4 className="font-medium">
         &copy; {new Date().getFullYear()} TwofacedHK. All rights reserved.

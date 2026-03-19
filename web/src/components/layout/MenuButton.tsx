@@ -9,7 +9,7 @@ interface MenuButtonProps {
 export const MenuButton: React.FC<MenuButtonProps> = ({ isOpen, toggle }) => {
     return (
         <button
-            className="md:hidden text-brand-white p-2 z-[10000] focus:outline-none"
+            className="md:hidden text-brand-black p-2 z-[10000] focus:outline-none"
             onClick={toggle}
             aria-label="Toggle menu"
         >
