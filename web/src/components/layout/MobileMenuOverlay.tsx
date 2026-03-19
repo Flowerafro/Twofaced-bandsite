@@ -12,7 +12,7 @@ interface MobileMenuOverlayProps {
 export const MobileMenuOverlay: React.FC<MobileMenuOverlayProps> = ({ isOpen, navItems, activeTab, onNavClick }) => {
     return (
         <div
-            className={`fixed inset-0 z-[9999] bg-brand-black w-screen h-screen flex flex-col items-center justify-center space-y-8 pt-20 pb-safe transition-all duration-500 ease-in-out ${isOpen
+            className={`fixed inset-0 z-[9999] bg-brand-red w-screen h-screen flex flex-col items-center justify-center space-y-8 pt-20 pb-safe transition-all duration-500 ease-in-out ${isOpen
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 translate-y-full pointer-events-none'
                 }`}

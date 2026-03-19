@@ -26,16 +26,25 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-brand-black text-brand-white flex flex-col">
+    <div className="min-h-screen bg-brand-red text-brand-black flex flex-col">
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
 
       <main className="flex-grow pt-24 pb-12 w-full max-w-7xl mx-auto">
         {renderContent()}
       </main>
 
-      <footer className="py-8 text-center text-brand-light-gray text-xs uppercase tracking-widest border-t border-brand-dark-gray">
+     <footer className="py-12 text-center text-brand-white text-xs uppercase tracking-widest flex flex-col gap-3">
+
+      <h4 className="font-medium">
         &copy; {new Date().getFullYear()} TwofacedHK. All rights reserved.
-      </footer>
+      </h4>
+
+      <p className="lowercase tracking-normal opacity-70 text-[10px]">
+        <a href="https://inlinedesign.no/" target="_blank" rel="noopener noreferrer">
+          Designed by <span className="hover:opacity-100 transition-opacity cursor-pointer">InlineDesign</span>
+        </a>
+      </p>
+</footer>
 
       <CookieBanner />
     </div>

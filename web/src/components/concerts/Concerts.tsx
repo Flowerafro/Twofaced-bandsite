@@ -35,13 +35,13 @@ export const Concerts: React.FC = () => {
     };
 
     return (
-        <section className="flex flex-col items-center py-12 px-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-brand-white mb-12">
+        <section className="flex flex-col items-center py-12 px-4 animate-in fade-in slide-in-from-bottom-4 duration-500 bg-brand-red">
+            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-brand-black mb-12">
                 Konserter
             </h2>
             <ul className="w-full max-w-4xl space-y-4">
                 {loading ? (
-                    <p className="text-center text-brand-light-gray animate-pulse">
+                    <p className="text-center text-brand-black animate-pulse">
                         Laster datoer...
                     </p>
                 ) : dates.length > 0 ? (

@@ -11,7 +11,7 @@ export const NavLogo: React.FC<NavLogoProps> = ({ onClick }) => {
 
     return (
         <div
-            className="text-2xl font-black tracking-tighter uppercase text-brand-white cursor-pointer hover:text-brand-red transition-colors z-[10000]"
+            className="text-2xl font-black tracking-tighter uppercase text-brand-black cursor-pointer hover:text-brand-black transition-colors z-[10000]"
             onClick={onClick}
         >
             {hasError ? (

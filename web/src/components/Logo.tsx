@@ -7,8 +7,8 @@ export const Logo: React.FC = () => {
     return (
         <>
             {hasError ? (
-                <h1 className="text-4xl md:text-8xl lg:text-9xl font-black opacity-50 uppercase tracking-tighter text-brand-white mb-6 break-words">
-                    Twofaced<span className="text-brand-red">HK</span>
+                <h1 className="text-4xl md:text-8xl lg:text-9xl font-black opacity-50 uppercase tracking-tighter text-brand-black mb-6 break-words">
+                    Twofaced<span className="text-brand-black">HK</span>
                 </h1>
             ) : (
                 <img
