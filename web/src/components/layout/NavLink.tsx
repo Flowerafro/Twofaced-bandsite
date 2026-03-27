@@ -14,12 +14,12 @@ export const NavLink: React.FC<NavLinkProps> = ({ item, isActive, onClick, varia
 
 const desktopStyles = `text-sm font-bold tracking-widest ${
   isActive
-    ? "text-brand-black underline decoration-2 underline-offset-4 decoration-brand-black"
-    : "text-brand-black no-underline"
+    ? "text-white underline decoration-2 underline-offset-4 decoration-brand-black"
+    : "text-white no-underline"
 }`;
 
-    const mobileStyles = `text-4xl font-black tracking-tighter  transform hover:scale-105 ${isActive ? "text-brand-black underline decoration-2 underline-offset-4 decoration-brand-black"
-    : "text-brand-black no-underline"
+    const mobileStyles = `text-4xl font-black tracking-tighter  transform hover:scale-105 ${isActive ? "text-white underline decoration-2 underline-offset-4 decoration-brand-black"
+    : "text-white no-underline"
         }`;
 
     return (

@@ -16,16 +16,16 @@ interface ConcertRowProps {
 
 export const ConcertRow: React.FC<ConcertRowProps> = ({ date, formatDate }) => {
     return (
-        <li className="bg-brand-black/30 p-6 rounded-lg border border-brand-black flex flex-col md:flex-row justify-between items-center gap-4 hover:bg-brand-black/50 transition-colors">
+        <li className="bg-brand-black p-6 rounded-lg border border-brand-black flex flex-col md:flex-row justify-between items-center gap-4 ">
             <div className="text-center md:text-left">
-                <time dateTime={date.date} className="text-brand-black font-bold uppercase tracking-widest text-sm block">
+                <time dateTime={date.date} className="text-brand-white font-bold uppercase tracking-widest text-sm block">
                     {formatDate(date.date)}
                 </time>
-                <div className="text-2xl font-bold text-brand-black">{date.venue}</div>
-                <div className="text-brand-black">{date.city}</div>
+                <div className="text-2xl font-bold text-brand-white">{date.venue}</div>
+                <div className="text-brand-white">{date.city}</div>
             </div>
             {date.soldOut ? (
-                <span className="px-6 py-2 bg-brand-black text-brand-black uppercase text-sm font-bold border border-transparent">
+                <span className="px-6 py-2 bg-brand-black text-brand-white uppercase text-sm font-bold border border-transparent">
                     Utsolgt
                 </span>
             ) : date.ticketUrl ? (
@@ -34,7 +34,7 @@ export const ConcertRow: React.FC<ConcertRowProps> = ({ date, formatDate }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Les mer om konserten ${date.venue} i ${date.city}`}
-                    className="px-6 py-2 bg-brand-red text-brand-black uppercase text-sm font-bold hover:bg-brand-black hover:text-black transition-colors"
+                    className="px-6 py-2 bg-brand-red text-brand-black uppercase text-sm font-bold hover:bg-brand-black hover:text-white transition-colors"
                 >
                     Billettinfo
                 </a>

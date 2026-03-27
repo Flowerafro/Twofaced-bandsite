@@ -44,7 +44,7 @@ export const Merch: React.FC = () => {
                 {merch.map((item) => (
                     <li key={item._id} className="group flex flex-col">
                         <div
-                            className="relative bg-brand-black aspect-square overflow-hidden border-brand-black rounded-sm cursor-pointer shadow-xl mb-4"
+                            className="relative bg-transparent aspect-square overflow-hidden border-brand-black rounded-sm cursor-pointer mb-4"
                             onClick={() => {
                                 setSelectedItem(item);
                                 setActiveImageIndex(0);

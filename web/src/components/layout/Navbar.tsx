@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
     };
 
     return (
-        <nav className="fixed top-0 left-0 right-0 h-20 bg-brand-red/95 backdrop-blur-sm drop-shadow z-50 px-6 md:px-12 flex items-center justify-between">
+        <nav className="fixed top-0 left-0 right-0 h-20 bg-brand-black/95 backdrop-blur-sm drop-shadow z-50 p-6 md:px-12 flex items-center justify-between">
             <NavLogo onClick={() => handleNavClick('Landing')} />
 
             <DesktopMenu

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logoSrc from "../../assets/Twofaced-logo2.png"
+import logoSrc from "../../assets/Twofaced-logo1.png"
 
 
 interface NavLogoProps {

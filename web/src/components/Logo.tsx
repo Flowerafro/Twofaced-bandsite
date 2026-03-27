@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logoSrc from "../assets/Facetwoface-logo.png"
+import logoSrc from "../assets/Logoz.png"
 
 export const Logo: React.FC = () => {
     const [hasError, setHasError] = useState(false);
@@ -14,7 +14,7 @@ export const Logo: React.FC = () => {
                 <img
                     src={logoSrc}
                     alt="Twofaced band logo"
-                    className="w-64 md:w-96 h-auto object-contain"
+                    className="w-64 md:w-1/2 h-auto object-contain"
                     onError={() => setHasError(true)}
                 />
             )}
